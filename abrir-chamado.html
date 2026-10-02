@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrir chamado | Central de Serviços de Rede</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/abrir-chamado.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div>
+          <h1>Central de Chamados</h1>
+          <p>Registro e acompanhamento de solicitações técnicas</p>
+        </div>
+        <nav class="menu" aria-label="Navegação principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="chamados.html">Chamados</a></li>
+            <li>
+              <a href="abrir-chamado.html" class="ativo" aria-current="page"
+                >Abrir chamado</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="principal">
+      <div class="container">
+        <div class="formulario-topo">
+          <p class="sub">Abertura de solicitação</p>
+          <h2>Abrir novo chamado</h2>
+          <p>Os campos marcados com * são obrigatórios.</p>
+        </div>
+
+        <form
+          class="formulario"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <fieldset class="secao">
+            <legend>1. Dados do solicitante</legend>
+            <div class="linha">
+              <div class="campo">
+                <label for="nome">Nome completo *</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  autocomplete="name"
+                  required
+                  minlength="5"
+                  maxlength="100"
+                />
+              </div>
+              <div class="campo">
+                <label for="email">E-mail *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  maxlength="100"
+                />
+              </div>
+            </div>
+            <div class="linha">
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  autocomplete="tel"
+                  placeholder="(47) 90000-0000"
+                  minlength="10"
+                  maxlength="15"
+                />
+              </div>
+              <div class="campo">
+                <label for="data-hora">Data e hora da ocorrência *</label>
+                <input
+                  type="datetime-local"
+                  id="data-hora"
+                  name="data-hora"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="secao">
+            <legend>2. Informações do chamado</legend>
+            <div class="linha">
+              <div class="campo">
+                <label for="categoria">Categoria *</label>
+                <select id="categoria" name="categoria" required>
+                  <option value="">Selecione</option>
+                  <option value="rede">Rede</option>
+                  <option value="seguranca">Segurança</option>
+                  <option value="equipamentos">Equipamentos</option>
+                  <option value="sistemas">Sistemas</option>
+                </select>
+              </div>
+              <fieldset class="campo">
+                <legend>Prioridade *</legend>
+                <div class="grupo">
+                  <label class="opcao" for="prioridade-baixa"
+                    ><input
+                      type="radio"
+                      id="prioridade-baixa"
+                      name="prioridade"
+                      value="baixa"
+                      required
+                    />
+                    Baixa</label
+                  >
+                  <label class="opcao" for="prioridade-media"
+                    ><input
+                      type="radio"
+                      id="prioridade-media"
+                      name="prioridade"
+                      value="media"
+                    />
+                    Média</label
+                  >
+                  <label class="opcao" for="prioridade-alta"
+                    ><input
+                      type="radio"
+                      id="prioridade-alta"
+                      name="prioridade"
+                      value="alta"
+                    />
+                    Alta</label
+                  >
+                </div>
+              </fieldset>
+              <div class="campo">
+                <label for="anexo">Anexo</label>
+                <input
+                  type="file"
+                  id="anexo"
+                  name="anexo"
+                  accept=".png,.jpg,.jpeg,.pdf"
+                />
+              </div>
+            </div>
+            <div class="linha">
+              <div class="campo">
+                <label for="descricao">Descrição do problema *</label>
+                <textarea
+                  id="descricao"
+                  name="descricao"
+                  placeholder="Explique o que aconteceu..."
+                  required
+                  minlength="20"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <fieldset class="campo">
+                <legend>Equipamentos ou serviços afetados</legend>
+                <div class="grupo">
+                  <label class="opcao" for="eq-computador"
+                    ><input
+                      type="checkbox"
+                      id="eq-computador"
+                      name="equipamentos"
+                      value="computador"
+                    />
+                    Computador</label
+                  >
+                  <label class="opcao" for="eq-impressora"
+                    ><input
+                      type="checkbox"
+                      id="eq-impressora"
+                      name="equipamentos"
+                      value="impressora"
+                    />
+                    Impressora</label
+                  >
+                  <label class="opcao" for="eq-rede"
+                    ><input
+                      type="checkbox"
+                      id="eq-rede"
+                      name="equipamentos"
+                      value="rede"
+                    />
+                    Rede</label
+                  >
+                  <label class="opcao" for="eq-sistema"
+                    ><input
+                      type="checkbox"
+                      id="eq-sistema"
+                      name="equipamentos"
+                      value="sistema"
+                    />
+                    Sistema</label
+                  >
+                </div>
+              </fieldset>
+            </div>
+          </fieldset>
+
+          <div class="rodape-form">
+            <label class="opcao" for="confirmacao">
+              <input
+                type="checkbox"
+                id="confirmacao"
+                name="confirmacao"
+                value="sim"
+                required
+              />
+              Confirmo que as informações fornecidas são verdadeiras. *
+            </label>
+            <div class="botoes">
+              <button class="botao botao-claro" type="reset">Limpar</button>
+              <button class="botao" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="rodape">
+      <div class="container">
+        <p>
+          Central de Serviços de Rede &bull; Eduardo Esser &bull;
+          Desenvolvimento Web I &bull; IFC Campus Araquari
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
