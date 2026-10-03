@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #1a1a2e;
+  background-color: #eef2f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Cabeçalho e menu */
+.cabecalho {
+  background-color: #202d46;
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+.cabecalho .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.cabecalho h1 {
+  font-size: 1.5rem;
+}
+.cabecalho p {
+  font-size: 0.9rem;
+  color: #d6e2f7;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.menu a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  background-color: #f5f8fc;
+  color: #202d46;
+  font-weight: bold;
+}
+.menu a:hover {
+  background-color: #d6e2f7;
+}
+.menu a.ativo {
+  background-color: #8b9ca3;
+}
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #f2a900;
+  outline-offset: 2px;
+}
+
+/* Conteúdo e rodapé */
+.principal {
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+.principal h2 {
+  margin-bottom: 1rem;
+}
+.rodape {
+  background-color: #202d46;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Botões */
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background-color: #202d46;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+.botao:hover {
+  background-color: #202d46;
+}
+.botao-claro {
+  background-color: #e1e8f2;
+  color: #202d46;
+}
+.botao-claro:hover {
+  background-color: #cdd8e8;
+}

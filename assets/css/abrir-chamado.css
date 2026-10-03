@@ -1,0 +1,134 @@
+.formulario-topo {
+  margin-bottom: 1.5rem;
+}
+
+.formulario-topo .sub {
+  color: #4a5568;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.formulario-topo h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.formulario-topo p {
+  color: #4a5568;
+}
+
+.formulario {
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  background-color: #f8fafc;
+  border: 1px solid #b6c4d6;
+}
+
+.formulario fieldset {
+  border: 0;
+  margin-bottom: 1.5rem;
+}
+
+.formulario legend {
+  color: #173b82;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.formulario .secao + .secao {
+  border-top: 1px solid #b6c4d6;
+  padding-top: 1.5rem;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.campo {
+  flex: 1 1 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.campo label,
+.campo legend {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #4a5568;
+  margin-bottom: 0;
+}
+
+.campo fieldset {
+  margin-bottom: 0;
+}
+
+.campo
+  input[type="text"]
+  .campo
+  input[type="email"]
+  .campo
+  input[type="tel"]
+  .campo
+  input[type="datetime-local"]
+  .campo
+  input[type="file"]
+  .campo
+  select
+  .campo
+  textarea {
+  padding: 0.6rem;
+  border: 1px solid #9fb3c8;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+.campo textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+.grupo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  padding: 0.6rem;
+  border: 1px solid #9fb3c8;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+.rodape-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 48rem) {
+  .formulario-topo h2 {
+    font-size: 1.5rem;
+  }
+  .linha,
+  .rodape-form,
+  .botoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .campo {
+    flex-basis: auto;
+  }
+}

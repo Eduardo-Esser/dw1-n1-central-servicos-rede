@@ -1,0 +1,78 @@
+.apresentacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #e8f4fc;
+  border: 1px solid #9fc3dc;
+  border-radius: 0.6rem;
+}
+
+.apresentacao-texto {
+  flex: 1 1 20rem;
+}
+.apresentacao h2 {
+  font-size: 2rem;
+}
+.apresentacao p {
+  color: #4a5568;
+}
+
+.cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cartao {
+  flex: 1 1 14rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9fb3c8;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.cartao-corpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.categoria {
+  align-self: flex-start;
+  padding: 0.15rem 0.75rem;
+  border-radius: 1rem;
+  background-color: #dbe8fb;
+  color: #173b82;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.cartao h3 {
+  font-size: 1.25rem;
+}
+.cartao-corpo p:not(.categoria) {
+  color: #4a5568;
+  font-size: 0.95rem;
+  flex: 1;
+}
+.cartao a {
+  color: #173b82;
+  font-weight: bold;
+}
+.cartao a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 48rem) {
+  .apresentacao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .apresentacao h2 {
+    font-size: 1.5rem;
+  }
+}
