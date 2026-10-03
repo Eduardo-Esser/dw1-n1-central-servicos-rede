@@ -5,7 +5,7 @@ Aplicação Web estática com três páginas, feita apenas com HTML e CSS.
 
 - **Autor:** Eduardo Esser
 - **Repositório:** https://github.com/Eduardo-Esser/dw1-n1-central-servicos-rede
-- **Publicação:** https://SEU-USUARIO.github.io/dw1-n1-central-servicos-rede/
+- **Publicação:** https://Eduardo-Esser.github.io/dw1-n1-central-servicos-rede/
 
 ## Páginas
 
